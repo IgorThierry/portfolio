@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardActions, CardContent, CardHeader, Chip, Fade,
 import { RepoForkedIcon, RepoIcon, StarIcon } from '@primer/octicons-react';
 import Image from 'next/image'
 import { useRef } from "react";
-import useAnimate from "./useAnimate";
+import useAnimate from "../useAnimate";
 
 const useStyles = makeStyles(theme => ({
     cont: {

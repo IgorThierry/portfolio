@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import {
@@ -6,12 +7,15 @@ import {
   useMediaQuery,
   CssBaseline,
 } from "@material-ui/core";
-import { darkTheme, lightTheme } from "../src/theme";
-import Script from "next/script";
+import { darkTheme, lightTheme } from "../theme";
+
+import Analytics from "../components/Analytics";
+import * as gtag from "../lib/gtag";
 
 export default function MyApp({ Component, pageProps }) {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [theme, setTheme] = useState(prefersDarkMode ? darkTheme : lightTheme);
+  const router = useRouter();
 
   useEffect(() => {
     setTheme(prefersDarkMode ? darkTheme : lightTheme);
@@ -25,24 +29,18 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <React.Fragment>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script strategy="lazyOnload">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-        page_path: window.location.pathname,
-        });
-    `}
-      </Script>
-
       <Head>
         <title>Igor Thierry</title>
         <meta
@@ -54,6 +52,8 @@ export default function MyApp({ Component, pageProps }) {
         <CssBaseline />
         <Component {...pageProps} setTheme={setTheme} />
       </MuiThemeProvider>
+
+      <Analytics />
     </React.Fragment>
   );
 }

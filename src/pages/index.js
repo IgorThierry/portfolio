@@ -1,12 +1,12 @@
 import React, { useCallback } from 'react';
 import { AppBar, Container, IconButton, makeStyles, Toolbar, Typography, useScrollTrigger, useTheme } from '@material-ui/core';
-import Landing from '../src/Landing';
-import Skills from '../src/Skills';
-import Projects from '../src/Projects';
-import Experience from '../src/Experience';
-import About from '../src/About';
-import data from '../data.json';
-import { darkTheme, lightTheme } from '../src/theme';
+import Landing from '../components/Landing';
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Experience from '../components/Experience';
+import About from '../components/About';
+import data from '../../data.json';
+import { darkTheme, lightTheme } from '../theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
 const { name, projects } = data
 

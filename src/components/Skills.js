@@ -4,9 +4,9 @@ import clsx from "clsx";
 import Image from 'next/image'
 import { useRef} from "react";
 import simpleIcons from 'simple-icons'
-import data from '../data.json'
-import useAnimate from "./useAnimate";
-import { iconify } from "./util";
+import data from '../../data.json'
+import useAnimate from "../useAnimate";
+import { iconify } from "../util";
 const { skills } = data
 
 const wrapper = (sk = []) => sk.map(v => {

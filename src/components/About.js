@@ -1,9 +1,9 @@
 import { Grid, makeStyles, Typography, Tooltip, Avatar } from "@material-ui/core";
-import data from '../data.json'
+import data from '../../data.json'
 import simpleIcons from 'simple-icons'
 import clsx from "clsx";
 import Image from 'next/image'
-import { iconify } from "./util";
+import { iconify } from "../util";
 import Cancel from "@material-ui/icons/Cancel";
 const { about } = data
 
