@@ -7,16 +7,53 @@ const { name } = data;
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" style={{ overflowX: "hidden" }}>
+      <Html lang="pt-BR" style={{ overflowX: "hidden" }}>
         <Head>
           <meta charSet="utf-8" />
+
+          {/* <!-- Primary Meta Tags --> */}
+          <title>Igor Thierry - Desenvolvedor Full-Stack</title>
+          <meta
+            name="title"
+            content="Igor Thierry - Desenvolvedor Full-Stack"
+          />
+          <meta
+            name="description"
+            content="Olá meu nome é Igor Thierry sou um desenvolvedor full-stack, crio sites modernos e aplicativos multiplataforma usando as melhores tecnologias do mercado."
+          />
+          <meta name="keywords" content={name + " desenvolvedor full-stack"} />
+
+          {/* <!-- Open Graph / Facebook --> */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.igorthierry.com.br/" />
+          <meta
+            property="og:title"
+            content="Igor Thierry - Desenvolvedor Full-Stack"
+          />
+          <meta
+            property="og:description"
+            content="Olá meu nome é Igor Thierry sou um desenvolvedor full-stack, crio sites modernos e aplicativos multiplataforma usando as melhores tecnologias do mercado."
+          />
+          <meta property="og:image" content="" />
+
+          {/* <!-- Twitter --> */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:url"
+            content="https://www.igorthierry.com.br/"
+          />
+          <meta
+            property="twitter:title"
+            content="Igor Thierry - Desenvolvedor Full-Stack"
+          />
+          <meta
+            property="twitter:description"
+            content="Olá meu nome é Igor Thierry sou um desenvolvedor full-stack, crio sites modernos e aplicativos multiplataforma usando as melhores tecnologias do mercado."
+          />
+          <meta property="twitter:image" content="" />
+
           {/* PWA primary color */}
           <meta name="theme-color" content="black" />
-          <meta name="description" content={`Portfolio of ${name}`} />
-          <meta
-            name="keywords"
-            content={"Portfolio " + name + " skills projects experience resume"}
-          />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
