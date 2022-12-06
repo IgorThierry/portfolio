@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Olá meu nome é Igor Thierry sou um desenvolvedor full-stack, crio sites modernos e aplicativos multiplataforma usando as melhores tecnologias do mercado."
           />
-          <meta property="og:image" content="" />
+          <meta property="og:image" content="/aizen-manga-muken.jpg" />
 
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
             property="twitter:description"
             content="Olá meu nome é Igor Thierry sou um desenvolvedor full-stack, crio sites modernos e aplicativos multiplataforma usando as melhores tecnologias do mercado."
           />
-          <meta property="twitter:image" content="" />
+          <meta property="twitter:image" content="/aizen-manga-muken.jpg" />
 
           {/* PWA primary color */}
           <meta name="theme-color" content="black" />
