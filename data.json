@@ -85,28 +85,28 @@
     "experience": {
         "Work Experience": [
             {
+                "organization": "Kirvano",
+                "role": "Full Stack Developer",
+                "type": "System analyst",
+                "startDate": "2024-05-02",
+                "endDate": "currently",
+                "city": "Barueri",
+                "state": "São Paulo",
+                "country": "Brasil",
+                "url": "https://www.linkedin.com/company/kirvano/",
+                "thumbnail": "https://i.imgur.com/54uCRIW.jpg"
+            },
+            {
                 "organization": "Confitec",
-                "role": "Front-end Developer",
+                "role": "Analista de sistemas",
                 "type": "System analyst",
                 "startDate": "2022-05-01",
-                "endDate": "currently",
+                "endDate": "2024-02-01",
                 "city": "São Paulo",
                 "state": "São Paulo",
                 "country": "Brasil",
                 "url": "https://www.linkedin.com/company/confitec/",
                 "thumbnail": "https://i.imgur.com/QZ0Rndu.jpg"
-            },
-            {
-                "organization": "Zoeweb",
-                "role": "Full Stack Developer",
-                "type": "Sênior Web Developer",
-                "startDate": "2021-02-01",
-                "endDate": "2022-04-16",
-                "city": "Goiânia",
-                "state": "Goiás",
-                "country": "Brasil",
-                "url": "https://www.linkedin.com/company/zoewebplay/",
-                "thumbnail": "https://i.imgur.com/Jv69NF2.jpg"
             }
         ]
     },
