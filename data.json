@@ -69,12 +69,12 @@
     "projects": {
         "baseURI": "https://api.github.com/repos/IgorThierry/",
         "repositories": [
+            "donate-crypto-dapp",
             "ignews",
-            "rentx",
-            "gofinances",
-            "nlw-return-origin-doctor-care",
             "ignite-timer",
-            "ignite-coffee-delivery"
+            "ignite-coffee-delivery",
+            "nlw-return-origin-doctor-care",
+            "rentx"
         ]
     },
     "experience": {
