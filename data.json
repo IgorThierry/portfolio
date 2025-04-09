@@ -15,19 +15,14 @@
                 "link": "https://www.linkedin.com/in/igorthierry/"
             },
             {
-                "alt": "Igor Thierry Instagram",
-                "icon": "instagram",
-                "link": "https://www.instagram.com/igorthierry.dev/"
+                "alt": "Igor Thierry X",
+                "icon": "twitter",
+                "link": "https://x.com/IgorThierryDev"
             },
             {
                 "alt": "Igor Thierry Github",
                 "icon": "github",
                 "link": "https://github.com/IgorThierry"
-            },
-            {
-                "alt": "Email",
-                "icon": "gmail",
-                "link": "mailto:igorthierry15@gmail.com"
             }
         ]
     },
@@ -86,8 +81,8 @@
         "Work Experience": [
             {
                 "organization": "Kirvano",
-                "role": "Full Stack Developer",
-                "type": "System analyst",
+                "role": "Squad Owner",
+                "type": "Full Stack Developer",
                 "startDate": "2024-05-02",
                 "endDate": "currently",
                 "city": "Barueri",
@@ -111,8 +106,8 @@
         ]
     },
     "about": {
-        "description": "I'm a full-stack web developer, I studied computer science at UNIP. I make modern websites using the best technologies on the market and create cross-platform applications with the best UI practices.",
-        "picture": "/profile.jfif",
+        "description": "Full Stack Developer since 2018, with solid experience in challenging and scalable projects. Specialized in React, Node.js, Laravel, and AWS, with a strong focus on clean architecture and agile methodologies. Passionate about technology, continuous learning, and building solutions that deliver real value. Currently exploring the Web3 ecosystem, focusing on the development of smart contracts and decentralized applications (DApps).",
+        "picture": "/igorthierry.webp",
         "social": [
             {
                 "alt": "Igor Thierry Linkedin",
@@ -120,9 +115,9 @@
                 "link": "https://www.linkedin.com/in/igorthierry/"
             },
             {
-                "alt": "Igor Thierry Instagram",
-                "icon": "instagram",
-                "link": "https://www.instagram.com/igorthierry.dev/"
+                "alt": "Igor Thierry X",
+                "icon": "twitter",
+                "link": "https://x.com/IgorThierryDev"
             },
             {
                 "alt": "Igor Thierry Github",
